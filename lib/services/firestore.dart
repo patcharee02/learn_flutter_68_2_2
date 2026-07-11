@@ -19,7 +19,7 @@ class FirestoreService {
 
 
 // Read all person
-  Stream<QuerySnapshot> getAllPersons() {
+  Stream<QuerySnapshot> getPersons() {
     return persons.orderBy('createdAT', descending: true).snapshots();
   }
 

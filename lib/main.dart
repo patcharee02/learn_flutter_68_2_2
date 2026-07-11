@@ -12,7 +12,11 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-  runApp(MaterialApp(home: FristScreen()));
+  // runApp(MaterialApp(home: FristScreen()));
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    home: FristScreen(),
+  ));
 }
 
 // class MyApp extends StatelessWidget {
